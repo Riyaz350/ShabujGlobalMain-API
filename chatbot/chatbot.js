@@ -8,7 +8,6 @@ const credentials = {
     private_key: config.googlePrivateKey
 }
 
-
 const sessionClient = new dialogflow.SessionsClient({projectId, credentials});
 module.exports ={
 textQuery : async(userText, userId)=>{
