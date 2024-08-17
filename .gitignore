@@ -1,5 +1,7 @@
 node_modules
 .idea
 .vercel
-config/keys.js
+# config/keys.js
+config/dev.js
+config/prod.js
 .env

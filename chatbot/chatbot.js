@@ -1,8 +1,5 @@
 const dialogflow = require('dialogflow');
 const config = require('../config/keys');
-
-console.log("env value", process.env.SESSION_ID)
-
 const projectId = config.googleProjectID
 const sessionId = config.dialogFlowSessionID
 
