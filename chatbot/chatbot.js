@@ -1,8 +1,5 @@
 const dialogflow = require('dialogflow');
 const config = require('../config/keys');
-
-console.log("env value", process.env.SESSION_ID)
-
 const projectId = config.googleProjectID
 const sessionId = config.dialogFlowSessionID
 
@@ -10,6 +7,8 @@ const credentials = {
     client_email: config.googleClientEmail,
     private_key: config.googlePrivateKey
 }
+
+console.log(process.env.NODE_ENV)
 
 const sessionClient = new dialogflow.SessionsClient({projectId, credentials});
 module.exports ={
