@@ -5,7 +5,7 @@ const chatbot = require('../chatbot/chatbot')
 module.exports = app => {
 
     app.get('/', (req, res) => {
-        res.send({'hello': 'Johnny'})
+        res.send({'hello': 'Johnnyyy'})
     });
 
     app.post('/text_query', async (req, res) => {
