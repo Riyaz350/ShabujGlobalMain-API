@@ -1,17 +1,5 @@
 const dialogflow = require('dialogflow');
-const config = require('../config/keys');
-const { response } = require('express');
 const chatbot = require('../chatbot/chatbot')
-const credentials = {
-    client_email: config.googleClientEmail,
-    privateKey: config.googlePrivateKey
-}
-const projectId = config.googleProjectID
-const sessionId = config.dialogFlowSessionID
-
-const sessionClient = new dialogflow.SessionsClient({projectId, credentials});
-// const sessionPath = sessionClient.sessionPath(projectId, sessionId);
-
 
 
 module.exports = app => {

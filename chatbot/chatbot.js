@@ -8,7 +8,6 @@ const credentials = {
     private_key: config.googlePrivateKey
 }
 
-console.log(process.env.NODE_ENV)
 
 const sessionClient = new dialogflow.SessionsClient({projectId, credentials});
 module.exports ={
