@@ -4,18 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node main.jsx",
+    "backend": "nodemon index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "Riyaz",
   "license": "ISC",
   "dependencies": {
     "@google-cloud/dialogflow": "^6.8.0",
     "body-parser": "^1.20.2",
-    "dialogflow": "^1.2.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dialogflow": "^4.0.3",
     "dotenv": "^16.4.5",
     "env": "^0.0.2",
     "express": "^4.19.2",
+    "latest": "^0.2.0",
     "modules": "^0.4.0",
-    "node": "^20.9.0"
+    "mongodb": "^6.8.0",
+    "n": "^10.0.0",
+    "node": "^21.6.1",
+    "npx": "^10.2.2",
+    "react-router-dom": "^6.26.1"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^3.0.0"
   }
 }
